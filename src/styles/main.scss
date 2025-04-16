@@ -1,0 +1,60 @@
+$primary-color: #3b82f6;
+$secondary-color: #64748b;
+$background-color: #f8fafc;
+$card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+$modal-overlay: rgba(0, 0, 0, 0.75);
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card-hover {
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: $modal-overlay;
+    backdrop-filter: blur(4px);
+    z-index: 40;
+}
+
+.modal-content {
+    position: relative;
+    z-index: 50;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.meme-card {
+    @include card-hover;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: $card-shadow;
+}
+
+.like-button {
+    @include flex-center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: rgba(59, 130, 246, 0.1);
+    }
+
+    &.liked {
+        color: $primary-color;
+    }
+}

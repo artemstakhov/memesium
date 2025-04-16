@@ -1,0 +1,54 @@
+{
+    "memes": [
+        {
+            "id": 1,
+            "name": "Doge",
+            "image": "https://www.researchgate.net/publication/359456368/figure/fig1/AS:11431281103138195@1669617009814/A-blank-doge-meme-template.png"
+        },
+        {
+            "id": 2,
+            "name": "Questionable",
+            "image": "https://miro.medium.com/v2/resize:fit:1400/1*GI-td9gs8D5OKZd19mAOqA.png"
+        },
+        {
+            "id": 3,
+            "name": "Smart Guy",
+            "image": "https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Sad Pepe",
+            "image": "https://i0.wp.com/blog.artsper.com/wp-content/uploads/2022/06/pepefroggie-770x432-2.jpg?resize=644%2C362&ssl=1"
+        },
+        {
+            "id": 5,
+            "name": "Bombardilo Crocodile",
+            "image": "https://img04.rl0.ru/afisha/e1200x1200i/daily.afisha.ru/uploads/images/9/35/9358051d43cd017837248e3b43458eaf.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Tralalelo Tralala",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yuUnDvCpUD-dMfMLWS_ZMSqBt5DOK8MFHw&s"
+        },
+        {
+            "id": 7,
+            "name": "Anime Live Action",
+            "image": "https://i.ytimg.com/vi/cgvcuJIf8LE/sddefault.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Old code",
+            "image": "https://blog.zegocloud.com/wp-content/uploads/2024/02/programming-meme-2.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Else if",
+            "image": "https://www.theinsaneapp.com/wp-content/uploads/2022/04/programming-concepts-if-else-statement-explained.webp"
+        },
+        {
+            "id": 10,
+            "name": "Debugging",
+            "image": "https://itchronicles.com/wp-content/uploads/2020/09/jokes-in-software-dev.jpg"
+        }
+    ]
+}
