@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Input, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@heroui/react';
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Input } from '@heroui/react';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/main.scss';
 
 const EditMemeModal = ({ isOpen, onClose, meme, onSave }) => {
     const [formData, setFormData] = useState({ name: '', image: '', likes: 0 });
     const [errors, setErrors] = useState({});
-    const [imageSource, setImageSource] = useState('url');
 
     useEffect(() => {
         if (meme) {
@@ -54,33 +53,6 @@ const EditMemeModal = ({ isOpen, onClose, meme, onSave }) => {
             image: formData.image,
             likes: formData.likes
         });
-    };
-
-    const handleFileChange = (e) => {
-        if (e.target.files && e.target.files[0]) {
-            const file = e.target.files[0];
-
-            // Check if the file is jpg/jpeg
-            if (!file.type.match('image/jpeg')) {
-                setErrors({ ...errors, image: 'File must be JPG format' });
-                return;
-            }
-
-            const reader = new FileReader();
-            reader.onload = (event) => {
-                setFormData({
-                    ...formData,
-                    image: event.target.result
-                });
-                setErrors({ ...errors, image: null });
-            };
-            reader.readAsDataURL(file);
-        }
-    };
-
-    const setImageSourceType = (source) => {
-        setImageSource(source);
-        setErrors({ ...errors, image: null });
     };
 
     return (
